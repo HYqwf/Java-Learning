@@ -8,16 +8,20 @@ class Triangle{
 		a=x;
 		b=y;
 		c=z;
-		judge();
+		judgeE();
 		p=(a+b+c)/2.0;
 	}
 	Triangle(double m,double n){
 		a=m;
 		a1=n;
+		judgeH();
 	}
 	
-	public void judge(){
-		if(!(a+b>c && a-c<b||a-b<c)) System.out.print("The date is error!");
+	public void judgeE(){
+		if(!(a*b*c>0&&a+b>c && a-c<b||a-b<c)) System.out.print("The date is error!");
+	}
+	public void judgeH(){
+		if(!(a*a1>0 ))  System.out.print("The date is error!");
 	}
 
 	/*
